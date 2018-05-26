@@ -10,7 +10,7 @@ export class StockComponent implements OnInit {
 	
 	private stock:Stock
 
-	constructor(public stockService:StockService) { }
+	constructor(public stockService:StockService) { }  // 注入器
 
 	ngOnInit() {
 		this.stock = this.stockService.getStock();

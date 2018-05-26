@@ -1,11 +1,15 @@
 import { Injectable } from '@angular/core';
+import { LoggerService } from './logger.service';
 
 @Injectable()
 export class StockService {
 
-  	constructor() { }
+  	constructor(public logger: LoggerService) { 
+
+	}
 
 	getStock() :Stock{
+		this.logger.log("方法被调用");
 		return new Stock(1, "IBM");
 	}
 }
