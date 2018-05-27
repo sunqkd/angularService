@@ -10,6 +10,7 @@ export class StockComponent implements OnInit {
 	
 	private stock:Stock
 
+	// 构造函数是唯一的注入点
 	constructor(public stockService:StockService) { }  // 注入器
 
 	ngOnInit() {
